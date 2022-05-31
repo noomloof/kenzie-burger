@@ -1,0 +1,19 @@
+.cartList {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .productArea {
+  }
+}
+
+@media (min-width: 600px) {
+  .cartList {
+    margin-bottom: 0;
+    height: 55vh;
+    overflow-y: auto;
+  }
+  .productArea {
+  }
+}

@@ -1,0 +1,40 @@
+.productContainer {
+  width: 100%;
+  height: 56%;
+}
+
+.productList {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  list-style: none;
+  padding: 1%;
+  width: 98%;
+}
+
+.resultsFor {
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 5vw;
+  color: #333333;
+}
+
+.inputStyle {
+  color: #828282;
+}
+@media (min-width: 600px) {
+  .productContainer {
+    width: 60%;
+    margin-left: 7%;
+  }
+  .productList {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+  }
+
+  .resultsFor {
+    margin-top: 1rem;
+    font-size: 1.6vw;
+  }
+}

@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+  .cartContainer {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .cartContainer {
+    margin-top: 1.5rem;
+    height: 70%;
+    width: 30%;
+    background: #f5f5f5;
+  }
+}
+@media (min-width: 1000px) {
+  .cartContainer {
+    width: 27%;
+  }
+}
+@media (min-width: 1400px) {
+  .cartContainer {
+    width: 25%;
+  }
+}
