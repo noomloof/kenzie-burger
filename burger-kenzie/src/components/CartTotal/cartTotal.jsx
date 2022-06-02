@@ -1,15 +1,9 @@
 import "./styles.css";
-import { useEffect } from "react";
 
-export function CartTotal({
-  currentSale,
-  setCurrentSale,
-  cartTotal,
-  setCartTotal,
-}) {
+export function CartTotal({ currentSale, setCurrentSale }) {
   function getTotalValue() {
     return currentSale.reduce(
-      (accumulator, element) => accumulator + element.price,
+      (accumulator, element) => accumulator + element.price * element.quantity,
       0
     );
   }

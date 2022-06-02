@@ -16,6 +16,7 @@ export function NormalCart({ currentSale, handleItemRemoval }) {
               img={element.img}
               name={element.name}
               category={element.category}
+              quantity={element.quantity}
               handleItemRemoval={handleItemRemoval}
             />
           ))}

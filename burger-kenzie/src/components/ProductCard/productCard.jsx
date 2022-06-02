@@ -5,6 +5,7 @@ export function ProductCard({
   img,
   name,
   category,
+  quantity,
   handleItemRemoval,
   index,
 }) {
@@ -20,6 +21,7 @@ export function ProductCard({
       <div className="cartItemInfo">
         <div className="cartItemName"> {name} </div>
         <div className="cartItemCategory"> {category} </div>
+        <div className="cartItemQuantity"> {quantity}&times; </div>
       </div>
       <div className="cartRemove" onClick={grabId}>
         Remover

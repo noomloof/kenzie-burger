@@ -14,7 +14,13 @@ export function ProductList({
     let targetProduct = products.find((element) => element.id === productId);
     let dupeChecker = currentSale.find((element) => element.id === productId);
     if (!dupeChecker) {
+      targetProduct.quantity = 1;
       setCurrentSale([...currentSale, targetProduct]);
+    } else {
+      const indexProduct = currentSale.indexOf(dupeChecker);
+      currentSale[indexProduct].quantity =
+        currentSale[indexProduct].quantity + 1;
+      setCurrentSale([...currentSale]);
     }
   }
 
@@ -34,6 +40,7 @@ export function ProductList({
               img={element.img}
               name={element.name}
               category={element.category}
+              quantity={element.quantity}
               price={element.price}
               handleUpdateCart={handleUpdateCart}
               setFilter={setFilter}
@@ -50,6 +57,7 @@ export function ProductList({
               img={element.img}
               name={element.name}
               category={element.category}
+              quantity={element.quantity}
               price={element.price}
               handleUpdateCart={handleUpdateCart}
               setFilter={setFilter}

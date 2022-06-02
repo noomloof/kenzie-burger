@@ -1,5 +1,5 @@
 import "./App.css";
-import logo from "./components/images/logo.svg";
+import logo from "./assets/logo.svg";
 import { Header } from "./components/Header/header";
 import { ProductList } from "./components/ProductList/productList";
 import { Cart } from "./components/Cart/Cart";

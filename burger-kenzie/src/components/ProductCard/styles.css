@@ -49,6 +49,11 @@
     color: #828282;
   }
 
+  .cartItemQuantity {
+    font-size: 3.2vw;
+    color: #1f1e1e;
+  }
+
   .cartRemove {
     font-size: 3.6vw;
   }
